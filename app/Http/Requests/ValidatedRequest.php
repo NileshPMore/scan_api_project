@@ -29,9 +29,9 @@ class ValidatedRequest extends FormRequest
             'operator_id' => 'required|string',
             'device_id' => 'required|string',
             'action' => 'required|string',
-            'gps_lat' => 'nullable|integer|between:-90,90',
-            'gps_lng' => 'nullable|integer|between:-180,180',
-            'gps_accuracy' => 'nullable|integer',
+            'gps_lat' => 'nullable|numeric|between:-90,90',
+            'gps_lng' => 'nullable|numeric|between:-180,180',
+            'gps_accuracy' => 'nullable|numeric',
             'device_timestamp' => 'nullable|date',
             'app_version' => 'required|string'
         ];
@@ -50,9 +50,9 @@ class ValidatedRequest extends FormRequest
             'device_id.string' => 'Device ID is a required string',
             'action.required' => 'Action is mandatory',
             'action.string' => 'Action is a required string',
-            'gps_lat.integer' => 'Gps lat is a required numeric',
-            'gps_lng.integer' => 'Gps lng is a required numeric',
-            'gps_accuracy.integer' => 'Gps accuracy is a required numeric',
+            'gps_lat.numeric' => 'Gps lat is a required numeric',
+            'gps_lng.numeric' => 'Gps lng is a required numeric',
+            'gps_accuracy.numeric' => 'Gps accuracy is a required numeric',
             'device_timestamp.date' => 'Device timestamp is a required date',
             'app_version.required' => 'App Version is mandatory',
             'app_version.string' => 'App Version is a required string'
