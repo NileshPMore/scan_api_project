@@ -28,7 +28,7 @@
    * Integer fields are excluded from length validation.
    * This ensures clean and controlled input before processing.
    * The system uses htmlspecialchars() to safely encode special characters and prevent XSS attacks. It converts HTML symbols like < and > into safe text, ensuring no script execution during output rendering.
-
+   * The GPS latitude and longitude will also be verified.
 6. scan_id Idempotency (Duplicate Handling)
     * The scan_id acts as a unique identifier for each scan event.
     * Before insertion, the database is checked using scan_id.
