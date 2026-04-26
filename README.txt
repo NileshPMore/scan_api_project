@@ -45,7 +45,7 @@
 
 8. Database Design & Indexing
     * The database is designed using Laravel migrations with:
-    * Unique string fields (e.g., scan_id)
+    * Unique DB constraint on scan_id
     * Integer and nullable date fields
     * Indexed columns for optimized search and filtering
     * Indexes improve performance for query-heavy operations and enable faster data retrieval.
