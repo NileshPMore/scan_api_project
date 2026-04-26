@@ -18,9 +18,9 @@ return new class extends Migration
             $table->string('operator_id');
             $table->string('device_id');
             $table->string('action');
-            $table->integer('gps_lat')->nullable();
-            $table->integer('gps_lng')->nullable();
-            $table->integer('gps_accuracy')->nullable();
+            $table->decimal('gps_lat',10,7)->nullable();
+            $table->decimal('gps_lng',10,7)->nullable();
+            $table->decimal('gps_accuracy',10,7)->nullable();
             $table->datetime('device_timestamp')->nullable();
             $table->string('app_version');
             $table->timestamps();
