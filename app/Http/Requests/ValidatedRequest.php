@@ -29,8 +29,8 @@ class ValidatedRequest extends FormRequest
             'operator_id' => 'required|string',
             'device_id' => 'required|string',
             'action' => 'required|string',
-            'gps_lat' => 'nullable|integer',
-            'gps_lng' => 'nullable|integer',
+            'gps_lat' => 'nullable|integer|between:-90,90',
+            'gps_lng' => 'nullable|integer|between:-180,180',
             'gps_accuracy' => 'nullable|integer',
             'device_timestamp' => 'nullable|date',
             'app_version' => 'required|string'
