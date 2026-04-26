@@ -25,7 +25,7 @@ class ScanController extends Controller
         $this->scanvalidation = $scanvalidation;
     }
 
-    public function payloadapidata(ValidatedRequest $request){
+    public function scanapidata(ValidatedRequest $request){
 
         try{
             $validatedrequest = $request->validated();
