@@ -72,4 +72,5 @@
    * High performance
    * Safe transactional processing
    * Controlled API usage
+
 NOTE : URL - http://127.0.0.1:8000/api/scanapidata
